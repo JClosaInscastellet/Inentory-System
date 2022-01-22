@@ -1,7 +1,7 @@
 package inventorySystem;
 
 import java.util.ArrayList;
-
+ 
 /**
  * The Inventory Class is used to manage items created with the class {@link Item} <br>
  * It can do:
