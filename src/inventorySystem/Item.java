@@ -97,6 +97,14 @@ public class Item {
 	}
 	
 	/**
+	 * Removes  items to a item satck, see {@link Inventory#addItem(Item)}
+	 * @param quantity The quanity of the item you want to add
+	 */
+	public void lessQuantity(int quantity) {
+		this.quantity -= quantity;
+	}
+	
+	/**
 	 * Returns the ID of the item
 	 * @return ID of the item
 	 */

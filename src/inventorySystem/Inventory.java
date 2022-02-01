@@ -91,5 +91,20 @@ public class Inventory {
 
 		}
 	}
+	
+	/**
+	 * 
+	 * @param index	Index of the item you want to remove
+	 * @param quantity Quantity for stackable items
+	 */
+	public void removeItem(int index,int quantity) {
+		if(inventory.get(index).getQuantity() >= 1) {
+			inventory.get(index).lessQuantity(quantity);
+		}
+		if(inventory.get(index).getQuantity() < 1){
+			inventory.remove(index);
+		}
+		
+	}
 
 }
