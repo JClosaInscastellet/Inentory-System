@@ -106,5 +106,20 @@ public class Inventory {
 		}
 		
 	}
+	
+	/**
+	 * Removes all
+	 */
+	public void removeAll() {
+		inventory.removeAll(inventory);
+	}
+	/**
+	 * 
+	 * @return An arraylist with the inventory contents
+	 */
+	public ArrayList<Item> returnAList(){
+		return inventory;
+	}
 
 }
+
